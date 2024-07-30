@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    
+    <header class="encabezado">
+        <img class="encabezado_img" src="img/logo.png" alt="Logo">
+    </header>
+    <main class="c">
+        <div class="c_c">
+            <div class="c_c_t">
+                <textarea name="codigo" class="c_c_t_tex" placeholder="Ingrese el texto aqui"
+                autofocus maxlength="1000"></textarea>
+            </div>
+            <div class="c_c_m">
+                <img class="c_c_m_img" src="img/muñeco.png" alt="muñeco">
+                <h2 class="c_c_m_h2">Ningún mensaje fue encontrado</h2>
+                <p class="c_c_m_p">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <div class="c_c_men">
+                <textarea class="c_c_men_text" name="desencrip" id="desencrip"></textarea>
+            </div>
+        </div>
+        <div class="c_a">
+            <img class="c_a_img" src="img/exclamacion.png" alt="exclamacion">
+            <p class="c_a_p">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="c_b">
+            <button class="c_b_e">Encriptar</button>
+            <button class="c_b_d">Desencriptar</button>
+            <button class="c_b_c">Copiar</button>
+        </div>
+    </main>
 </body>
 </html>
