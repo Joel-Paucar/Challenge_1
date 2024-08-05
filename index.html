@@ -13,7 +13,7 @@
     <main class="c">
         <div class="c_c">
             <div class="c_c_t">
-                <textarea name="codigo" class="c_c_t_tex" placeholder="Ingrese el texto aqui"
+                <textarea id="codigo" name="codigo" class="c_c_t_tex" placeholder="Ingrese el texto aqui"
                 autofocus maxlength="1000"></textarea>
             </div>
             <div class="c_c_m">
@@ -22,7 +22,7 @@
                 <p class="c_c_m_p">Ingresa el texto que deseas encriptar o desencriptar</p>
             </div>
             <div class="c_c_men">
-                <textarea class="c_c_men_text" name="desencrip" id="desencrip"></textarea>
+                <textarea id="textEncript" class="c_c_men_text" name="desencrip" id="desencrip"></textarea>
             </div>
         </div>
         <div class="c_a">
@@ -30,10 +30,11 @@
             <p class="c_a_p">Solo letras minúsculas y sin acentos</p>
         </div>
         <div class="c_b">
-            <button class="c_b_e">Encriptar</button>
-            <button class="c_b_d">Desencriptar</button>
-            <button class="c_b_c">Copiar</button>
+            <button type="button" id="c_b_e" onclick="encriptar()">Encriptar</button>
+            <button type="button" id="c_b_d" onclick="desencriptar()">Desencriptar</button>
+            <button type="button" id="c_b_c" onclick="copiar()">Copiar</button>
         </div>
     </main>
+    <script src="js/app.js" defer></script>
 </body>
 </html>
