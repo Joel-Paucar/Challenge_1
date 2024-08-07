@@ -14,7 +14,7 @@
         <div class="c_c">
             <div class="c_c_t">
                 <textarea id="codigo" name="codigo" class="c_c_t_tex" placeholder="Ingrese el texto aqui"
-                autofocus maxlength="1000"></textarea>
+                autofocus maxlength="1000" onkeyup="area(this)"></textarea>
                 <div class="c_a">
                     <img class="c_a_img" src="img/exclamacion.png" alt="exclamacion">
                     <p class="c_a_p">Solo letras minúsculas y sin acentos</p>
@@ -30,7 +30,8 @@
                 <p class="c_c_m_p">Ingresa el texto que deseas encriptar o desencriptar</p>
             </div>
             <div class="c_c_men">
-                <textarea id="textEncript" class="c_c_men_text" name="desencrip" id="desencrip"></textarea>
+                <textarea id="textEncript" class="c_c_men_text" name="desencrip" id="desencrip" 
+                readonly></textarea>
                 <div class="c_b">
                     <button type="button" id="c_b_c" onclick="copiar()">Copiar</button>
                 </div>
