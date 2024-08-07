@@ -15,6 +15,14 @@
             <div class="c_c_t">
                 <textarea id="codigo" name="codigo" class="c_c_t_tex" placeholder="Ingrese el texto aqui"
                 autofocus maxlength="1000"></textarea>
+                <div class="c_a">
+                    <img class="c_a_img" src="img/exclamacion.png" alt="exclamacion">
+                    <p class="c_a_p">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="c_b">
+                    <button type="button" id="c_b_e" onclick="encriptar()">Encriptar</button>
+                    <button type="button" id="c_b_d" onclick="desencriptar()">Desencriptar</button>
+                </div>
             </div>
             <div class="c_c_m">
                 <img class="c_c_m_img" src="img/muñeco.png" alt="muñeco">
@@ -23,16 +31,10 @@
             </div>
             <div class="c_c_men">
                 <textarea id="textEncript" class="c_c_men_text" name="desencrip" id="desencrip"></textarea>
+                <div class="c_b">
+                    <button type="button" id="c_b_c" onclick="copiar()">Copiar</button>
+                </div>
             </div>
-        </div>
-        <div class="c_a">
-            <img class="c_a_img" src="img/exclamacion.png" alt="exclamacion">
-            <p class="c_a_p">Solo letras minúsculas y sin acentos</p>
-        </div>
-        <div class="c_b">
-            <button type="button" id="c_b_e" onclick="encriptar()">Encriptar</button>
-            <button type="button" id="c_b_d" onclick="desencriptar()">Desencriptar</button>
-            <button type="button" id="c_b_c" onclick="copiar()">Copiar</button>
         </div>
     </main>
     <script src="js/app.js" defer></script>
