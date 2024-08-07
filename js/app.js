@@ -101,6 +101,7 @@ function encriptar(){
     let nuevo = reglasEncript(texto);
     let encriptado = nuevo.join("");
     nuevotexto.innerHTML = encriptado;
+    area(nuevotexto)
 }
 
 function desencriptar(){
@@ -110,9 +111,23 @@ function desencriptar(){
     let nuevo = reglasDesencript(texto);
     let desencriptado = nuevo.join("");
     nuevotexto.innerHTML = desencriptado;
+    area(nuevotexto)
 }
 
 function copiar(){
     let texto = document.getElementById("textEncript").value;
     navigator.clipboard.writeText(texto)
+}
+
+function area(texto){
+    let ventana = document.querySelector("body").clientWidth;
+    if(ventana>800){
+        texto.removeAttribute("style");
+    }else{
+        if(texto.value==""){
+            texto.removeAttribute("style")
+        }else{
+            texto.style.height = (texto.scrollHeight)+"px";
+        }
+    }
 }
