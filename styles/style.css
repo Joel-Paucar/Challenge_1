@@ -135,6 +135,7 @@ button{
     border-radius: 24px;
     cursor: pointer;
 }
+
 #c_b_e{
     background-color: var(--color-primario);
     border: 2px, solid, var(--color-terciario);
@@ -177,7 +178,7 @@ button{
 @media (max-width: 800px){
     /*Encabezado*/
     .encabezado{
-        padding: 10% 1%;
+        padding: 9% 1%;
     }
 
     .encabezado_img{
@@ -185,17 +186,133 @@ button{
     }
 
     /*Main*/
+    .c_c{
+        flex-direction: column;
+        align-items: center;
+        height: 950px;
+        padding-top: 5%;
+        gap: 10%;
+    }
+
+    .c_c_t{
+        padding: 0%;
+        width: 100%;
+    }
+
     .c_c_t_tex{
-        width: 78%;
-        height: 590px;
+        width: 90%;
+        min-height: 590px;
+        height: auto;
+    }
+
+    .c_c_m{
+        width: 100%;
+        gap: 25px;
     }
 
     .c_c_m_img{
         display: none;
     }
+
+    /*Texto oculto*/
+    .c_c_men{
+        width: 100%;
+        padding: 0%;
+        align-items: center;
+    }
+
+    .c_c_men_text{
+        min-height: 230px;
+        height: auto;
+        padding: 2% 4%;
+    }
+
+    /*Advertencia*/
+    .c_a{
+        padding-left: 7%;
+    }
+
+    /*Botones*/
+    button{
+        width: 43.3%;
+    }
+    
+    #c_b_c{
+        width: 81%;
+    }
 }
 
 /*Celular*/
 @media (max-width: 480px){
+    /*Encabezado*/
+    .encabezado{
+        padding: 5% 0%;
+    }
 
+    .encabezado_img{
+        width: 25%;
+    }
+
+    /*Main*/
+    .c_c{
+        height: 840px;
+        padding-top: 15%;
+        gap: 12%;
+    }
+
+    .c_c_t{
+        padding: 0%;
+        width: 100%;
+        gap: 3%;
+    }
+
+    .c_c_t_tex{
+        width: 90%;
+        min-height: 300px;
+        height: auto;
+    }
+
+    .c_c_m{
+        padding: 0% 5%;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .c_c_m_img{
+        display: none;
+    }
+
+    /*Texto oculto*/
+    .c_c_men{
+        width: 100%;
+        padding: 0%;
+        align-items: center;
+    }
+
+    .c_c_men_text{
+        min-height: 100px;
+        height: auto;
+        padding: 2% 4%;
+    }
+
+    /*Advertencia*/
+    .c_a{
+        padding-left: 7%;
+    }
+
+    /*Botones*/
+    .c_b{
+        flex-direction: column;
+        gap: 15%;
+        height: 170px;
+    }
+
+    button{
+        width: 91.5%;
+    }
+    
+    #c_b_c{
+        width: 91.5%;
+        height: 60px;
+    }
 }
