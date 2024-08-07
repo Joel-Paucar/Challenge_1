@@ -39,14 +39,16 @@ body{
 .c_c{
     display: flex;
     width: 100%;
-    height: 700px;
+    height: 850px;
 }
 
 .c_c_t{
     display: flex;
+    gap: 1%;
+    flex-direction: column;
     width: 70%;
-    justify-content: end;
-    padding-right: 5%;
+    align-items: center;
+    padding-left: 6%;
     padding-top: 3%;
 }
 
@@ -56,7 +58,7 @@ body{
     resize: none;
     color: var(--color-primario);
     width: 78%;
-    height: 590px;
+    height: 650px;
     border: none;
 }
 
@@ -100,16 +102,16 @@ body{
     resize: none;
     color: var(--color-secundario);
     width: 90%;
-    height: 590px;
+    height: 690px;
     border: none;
 }
 
 /*Advertencia*/
 .c_a{
+    width: 100%;
     display: flex;
     gap: 1%;
     padding-left: 15%;
-    padding-bottom: 1.5%;
 }
 
 .c_a_p{
@@ -119,14 +121,16 @@ body{
 /*Botones*/
 .c_b{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     gap: 3%;
     height: 100px;
-    padding-left: 15%;
 }
 
 button{
     font-size: 16px;
-    width: 26.8%;
+    width: 35%;
     height: 68%;
     border-radius: 24px;
     cursor: pointer;
@@ -157,7 +161,7 @@ button{
 
 #c_b_c{
     display: none;
-    margin-left: 5.5%;
+    width: 83%;
     background-color: var(--color-terciario);
     border: 2px, solid, var(--color-primario);
     color: var(--color-primario);
@@ -167,4 +171,31 @@ button{
     background-color: var(--color-primario);
     border: 2px, solid, var(--color-terciario);
     color: var(--color-terciario);
+}
+
+/*Tablet*/
+@media (max-width: 800px){
+    /*Encabezado*/
+    .encabezado{
+        padding: 10% 1%;
+    }
+
+    .encabezado_img{
+        width: 15%;
+    }
+
+    /*Main*/
+    .c_c_t_tex{
+        width: 78%;
+        height: 590px;
+    }
+
+    .c_c_m_img{
+        display: none;
+    }
+}
+
+/*Celular*/
+@media (max-width: 480px){
+
 }
