@@ -98,7 +98,7 @@ function encriptar(){
     mostrar()
     let texto = document.getElementById("codigo").value;
     let nuevotexto = document.getElementById("textEncript");
-    let nuevo = reglasEncript(texto);
+    let nuevo = reglasEncript(texto.toLowerCase());
     let encriptado = nuevo.join("");
     nuevotexto.innerHTML = encriptado;
     area(nuevotexto)
@@ -108,7 +108,7 @@ function desencriptar(){
     mostrar()
     let texto = document.getElementById("codigo").value;
     let nuevotexto = document.getElementById("textEncript");
-    let nuevo = reglasDesencript(texto);
+    let nuevo = reglasDesencript(texto.toLowerCase());
     let desencriptado = nuevo.join("");
     nuevotexto.innerHTML = desencriptado;
     area(nuevotexto)
